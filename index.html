@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> </title>
   </head>
-
+<link rel="stylesheet" type="text/css" href="stye.css">
   <body>
     <header>
+      <div class="form-group">
+      <section>
       <h1>
         Order a smoothiegram
       </h1> 
-       <p>
+       <p class=" lead">
         <h2>  
           There's no better way to show a loved one you care than with a
           Smoothiegram!
         </h2>
-
+        </p>
+        <p>
           <h3> 
               Each Smoothiegram comes with a custom message printed on high-quality cardstock
               and your choice of a premium, hand-crafted smoothie.
           </h3>
       </p>
+    </section>
+  </div>
     </header>
 
     <main>
+      <div class="form-group">
       <section>
         <h2>Smoothie Options</h2>
         <p>Choose from one of these smoothies.</p>
         <table>
           <thead>
+          </div>
+            <div id="chart">
             <tr>
               <th>Flavor</th>
               <th>Price</th>
@@ -38,31 +46,33 @@
           <tbody>
             <tr>
               <td>Super Strawberries Delicious</td>
-              <td>$1,200.00</td>
+              <td class="price" >$1,200.00</td>
             </tr>
             <tr>
               <td>White Grape Ranger</td>
-              <td>$400.00</td>
+              <td class="price" >$400.00</td>
             </tr>
             <tr>
               <td>Blueberry Blast</td>
-              <td>$1,750.00</td>
+              <td class="price" >$1,750.00</td>
             </tr>
           </tbody>
         </table>
       </section>
+    </div>
 
+    <div class="form-group" >
       <section>
         <h2>Order form</h2>
-        <form action="">
+        <form>
           
           <fieldset>
-            <label>Your name</label>
+            <label>Your name:</label>
             <input type="text" name="sender">
           </fieldset>
 
           <fieldset>
-            <label>Who are we sending this too?</label>
+            <label>Who are we sending this to?</label>
             <input type="text" name="sender">
           </fieldset>
         
@@ -74,21 +84,46 @@
                 <option>Blueberry Blast</option>
             </select>
             <input type="submit" value="Submit">
+
+     </div>
+
+     <div class="form-group">
         </fieldset>
+        <p> When should we deliver?</p>
+        <form>
+          <input type="radio"  name="delivery-time"  value="pm">
+          <label>As Soon As Possible</label>
 
-        <p>When should we deliver?</p>
+          <input type="radio"  name="delivery-time"  value="am">
+          <label>Morning</label>
 
-<form>
-  <input type="radio" id="ASAP" name="ASAP">
-  <label>As Soon As Possible</label><br>
-  <input type="radio" id="Early" name="Morning">
-  <label>Morning</label><br>
-  <input type="radio" id="L8r" name="Afternoon">
-  <label>Afternoon</label>
-</form> 
+          <input type="radio"  name="delivery-time"  value="pm">
+          <label>Afternoon</label>
+        </form> 
+      </div>
+      <div class="form-group">
+          <label>Enter your message</label>
+          <textarea name="message"></textarea>
 
             <br><br>
       </section>
+    </div>
     </main>
   </body>
+  <div class="form-group">
+  <footer>
+    <section>
+    
+     
+       <label>Your email:</label>
+         <input type="text" name="sender">
+           <label>Subscribe to our newsletter?</label>
+            <input id="sub" type="checkbox" name="subscribe" value="yes" checked />
+             <button type="submit">Submit</button>
+           
+
+
+     </section>
+    </div>
+  </footer>
 </html>
